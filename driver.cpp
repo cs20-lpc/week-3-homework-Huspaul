@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
+#include <limits>
 #include "Student.hpp"
 #include "Course.hpp"
-#include <limits>
 
 
 using namespace std;
@@ -93,7 +93,7 @@ public:
 
 // ---- helper: safe line read after numeric input ----
 static void eatLine() {
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+   cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
 
 int main() {
